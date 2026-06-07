@@ -35,6 +35,29 @@ a, b, c, d
 
 数値は桁上がりしない独立したカテゴリです（0,0,2,0 は 0,0,1,1 より常に強い）。
 
+### 疑似クラスと疑似要素
+
+**疑似クラス** `:` は要素の**状態**に基づいてスタイルを適用します。詳細度はクラスセレクタと同じ **(0,0,1,0)** です。
+
+| 疑似クラス | 意味 | 例 |
+|------------|------|-----|
+| `:hover` | マウスが乗っている | `a:hover { color: red; }` |
+| `:focus` | フォーカスされている | `input:focus { outline: 2px solid blue; }` |
+| `:first-child` | 最初の子要素 | `li:first-child { font-weight: bold; }` |
+| `:nth-child(n)` | n番目の子要素 | `tr:nth-child(2n) { background: #eee; }` |
+
+**疑似要素** `::` は要素の**特定の部分**にスタイルを適用します。詳細度は要素型セレクタと同じ **(0,0,0,1)** です。
+
+| 疑似要素 | 意味 | 例 |
+|----------|------|-----|
+| `::before` | 要素の前に仮想要素を挿入 | `p::before { content: "→ "; }` |
+| `::after` | 要素の後に仮想要素を挿入 | `p::after { content: " ←"; }` |
+| `::first-line` | 最初の行 | `p::first-line { font-weight: bold; }` |
+| `::first-letter` | 最初の文字 | `p::first-letter { font-size: 2em; }` |
+| `::placeholder` | プレースホルダー文字列 | `input::placeholder { color: #999; }` |
+
+> **覚え方:** 疑似クラスは**状態**（`:hover` / `:nth-child`）、疑似要素は**部分**（`::before` / `::first-line`）
+
 ### 複合セレクタの例
 
 ```css
