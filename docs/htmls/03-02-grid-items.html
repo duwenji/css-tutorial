@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: sans-serif; margin: 16px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 120px);
+    gap: 12px;
+  }
+  .item {
+    background: #4a90d9;
+    color: #fff;
+    padding: 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wide { grid-column: span 2; }
+  .tall { grid-row: span 2; }
+  .big { grid-column: span 2; grid-row: span 2; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item wide">2列幅</div>
+    <div class="item">通常</div>
+    <div class="item tall">2行高さ</div>
+    <div class="item">通常</div>
+    <div class="item">通常</div>
+    <div class="item big">2×2</div>
+    <div class="item">通常</div>
+  </div>
+</body>
+</html>

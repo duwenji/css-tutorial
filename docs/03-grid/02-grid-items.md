@@ -123,12 +123,16 @@
 </html>
 ```
 
-## CSS Layout Guidelines との関連
+**画面イメージ:**
 
-Guidelinesのレイヤー構成図におけるGridの使用例：
+![グリッドアイテムプロパティ - 画面イメージ](../images/03-02-grid-items.png)
+
+## レイアウト設計原則との関連
+
+レイアウト設計原則のレイヤー構成図におけるGridの使用例：
 
 ```css
-/* Guidelinesより: grid内でflexをネスト */
+/* レイアウト設計原則より: grid内でflexをネスト */
 section {
   height: 100%;
   display: grid;

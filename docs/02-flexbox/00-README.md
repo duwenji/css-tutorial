@@ -1,7 +1,7 @@
 # 02. Flexbox - 1次元レイアウト
 
 このカテゴリでは、Flexboxの全プロパティと実践的な使い方を学びます。
-FlexboxはCSS Layout Design Guidelinesの核心技術です。
+Flexboxはレイアウト設計原則の核心技術です。
 
 ## 学習目標
 
@@ -21,7 +21,7 @@ FlexboxはCSS Layout Design Guidelinesの核心技術です。
 ## 学習の進め方
 
 01 → 02 → 03 の順に進めてください。
-特に `min-height: 0` の重要性は Layout Design Guidelines に直結する重要ポイントです。
+特に `min-height: 0` の重要性はレイアウト設計原則に直結する重要ポイントです。
 
 ---
 

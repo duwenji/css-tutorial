@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .parent {
+    color: #333;
+    font-size: 18px;
+    border: 2px solid #666;
+    padding: 16px;
+  }
+  .child {
+    border: inherit;
+  }
+</style>
+</head>
+<body>
+  <div class="parent">
+    親要素: 色・フォントサイズは継承される
+    <div class="child">
+      子要素: 色とフォントサイズは親から継承。borderはinherit指定
+    </div>
+  </div>
+</body>
+</html>

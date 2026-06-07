@@ -131,12 +131,16 @@
 </html>
 ```
 
-## CSS Layout Guidelines との関連
+**画面イメージ:**
 
-Layout Design Guidelinesのレイヤー構成図では、下位レイヤーで `display: grid` が使用されています。
+![グリッドコンテナプロパティ - 画面イメージ](../images/03-01-grid-container.png)
+
+## レイアウト設計原則との関連
+
+レイアウト設計原則のレイヤー構成図では、下位レイヤーで `display: grid` が使用されています。
 
 ```css
-/* Guidelines レイヤー構成図より */
+/* レイアウト設計原則のレイヤー構成図より */
 section {
   height: 100%;
   display: grid;
@@ -145,7 +149,7 @@ section {
 ```
 
 Gridは**flexの代替ではなく補完**です。
-Guidelinesでは、高さ伝播はflex、パネル分割はgridという使い分けをしています。
+レイアウト設計原則では、高さ伝播はflex、パネル分割はgridという使い分けをしています。
 
 ## 演習課題
 

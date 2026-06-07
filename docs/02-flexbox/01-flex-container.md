@@ -111,9 +111,13 @@ flex-direction: row の場合
 </html>
 ```
 
-## CSS Layout Guidelines との関連
+**画面イメージ:**
 
-Layout Design Guidelinesの高さ伝播レイヤーは、
+![フレックスコンテナプロパティ - 画面イメージ](../images/02-01-flex-container.png)
+
+## レイアウト設計原則との関連
+
+レイアウト設計原則の高さ伝播レイヤーは、
 `flex-direction: column` のコンテナを重ねることで実現されています。
 
 ```css

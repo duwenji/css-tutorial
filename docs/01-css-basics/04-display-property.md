@@ -10,7 +10,7 @@
 ## 概要
 
 `display` プロパティは、要素がドキュメントフローの中でどのように振る舞うかを決定します。
-CSS Layout Design Guidelines の中心となる flex レイアウトも、この display の理解が前提です。
+レイアウト設計原則の中心となる flex レイアウトも、この display の理解が前提です。
 
 ## 基本文法・プロパティ解説
 
@@ -90,13 +90,17 @@ flexコンテナの子要素は、`flex-direction` で定義された
 </html>
 ```
 
-## CSS Layout Guidelines との関連
+**画面イメージ:**
 
-Layout Design Guidelines の核心である**高さ伝播レイヤー**は、
+![displayプロパティ - 画面イメージ](../images/01-04-display-property.png)
+
+## レイアウト設計原則との関連
+
+レイアウト設計原則の核心である**高さ伝播レイヤー**は、
 `display: flex` と `flex-direction: column` の組み合わせで実現されています。
 
 ```css
-/* Guidelinesのレイヤー構造再掲 */
+/* レイアウト設計原則のレイヤー構造再掲 */
 .page {
   display: flex;
   flex-direction: column;

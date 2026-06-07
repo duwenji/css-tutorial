@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: sans-serif; margin: 16px; }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .card h3 { margin-top: 0; }
+</style>
+</head>
+<body>
+  <div class="card-grid">
+    <div class="card"><h3>カード 1</h3><p>内容が入ります</p></div>
+    <div class="card"><h3>カード 2</h3><p>内容が入ります</p></div>
+    <div class="card"><h3>カード 3</h3><p>内容が入ります</p></div>
+    <div class="card"><h3>カード 4</h3><p>内容が入ります</p></div>
+    <div class="card"><h3>カード 5</h3><p>内容が入ります</p></div>
+    <div class="card"><h3>カード 6</h3><p>内容が入ります</p></div>
+  </div>
+</body>
+</html>

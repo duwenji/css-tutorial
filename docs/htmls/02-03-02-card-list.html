@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: sans-serif; }
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+  }
+  .card {
+    flex: 0 0 calc(33.333% - 11px);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+</style>
+</head>
+<body>
+  <div class="card-list">
+    <div class="card">カード 1</div>
+    <div class="card">カード 2</div>
+    <div class="card">カード 3</div>
+    <div class="card">カード 4</div>
+    <div class="card">カード 5</div>
+    <div class="card">カード 6</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * { box-sizing: border-box; }
+  .box {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 4px solid #333;
+    margin: 16px;
+    background: #e0e0e0;
+  }
+  .box-content { box-sizing: content-box; }
+</style>
+</head>
+<body>
+  <div class="box">border-box: 幅200px固定</div>
+  <div class="box box-content">content-box: 幅は200 + 40 + 8 = 248px</div>
+</body>
+</html>

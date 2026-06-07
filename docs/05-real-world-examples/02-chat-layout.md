@@ -2,16 +2,16 @@
 
 ## この教材で身につくこと
 
-- Guidelinesに準拠したチャットUIのレイアウト構築
+- レイアウト設計原則に準拠したチャットUIのレイアウト構築
 - メッセージリスト＋入力欄の典型的なスクロール設計
 - 複数スクロール境界の適切な設定
 - AIスタジオV2で発生した問題の再現と修正
 
 ## 概要
 
-チャットUIはCSS Layout Design Guidelinesが最も活きるレイアウトの一つです。
+チャットUIはレイアウト設計原則が最も活きるレイアウトの一つです。
 メッセージリストのスクロール、入力エリアの固定、パネル分割など、
-Guidelinesの全原則を適用する必要があります。
+レイアウト設計原則の全原則を適用する必要があります。
 
 ## レイアウト構造
 
@@ -205,7 +205,7 @@ Guidelinesの全原則を適用する必要があります。
         <div class="message message--incoming">
           <div class="message__avatar">AI</div>
           <div class="message__bubble">
-            CSS Layout Design Guidelinesでは、高さ伝播にflexを使い、固定値はルートのみに制限します。
+            レイアウト設計原則では、高さ伝播にflexを使い、固定値はルートのみに制限します。
             また、flex子要素には必ずmin-height: 0を設定します。
           </div>
         </div>
@@ -223,9 +223,13 @@ Guidelinesの全原則を適用する必要があります。
 </html>
 ```
 
-## Guidelines 適用ポイント
+**画面イメージ:**
 
-### Guidelines レイヤー構成図との対応
+![チャットUIレイアウト - 画面イメージ](../images/05-02-chat-layout.png)
+
+## レイアウト設計原則 適用ポイント
+
+### レイヤー構成図との対応
 
 ```
 html/body/#root        → height: 100%
@@ -237,14 +241,14 @@ html/body/#root        → height: 100%
 
 ### AIスタジオV2で発生した問題と本実装での防止
 
-| # | 問題 | Guidelines原因 | 本実装 |
+| # | 問題 | 原因 | 本実装 |
 |---|------|--------------|--------|
 | 1 | 縦幅が大きすぎる | `calc(100vh - 120px)` | `flex: 1` + `min-height: 0` |
 | 3 | textareaレイアウト崩れ | `flex: 0 0 auto` + 固定height | `flex: 1` + `min-height: 44px` |
 | 4 | 画面下部が隠れる | 上位層 `overflow: hidden` | `.message-list` のみ `overflow-y: auto` |
 | 6 | 多件数でレイアウト崩れ | `max-height: none` | `min-height: 0` で制約内に収める |
 
-## Guidelines チェックリスト検証
+## チェックリスト検証
 
 | # | 項目 | 対応 |
 |---|------|------|
