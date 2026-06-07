@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: sans-serif; }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header  header"
+      "sidebar main"
+      "footer  footer";
+    height: 100vh;
+    gap: 0;
+  }
+
+  .header {
+    grid-area: header;
+    background: #333;
+    color: #fff;
+    padding: 16px;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    background: #e8e8e8;
+    padding: 16px;
+    overflow-y: auto;
+  }
+
+  .main {
+    grid-area: main;
+    padding: 16px;
+    overflow-y: auto;
+    min-height: 0;
+  }
+
+  .footer {
+    grid-area: footer;
+    background: #333;
+    color: #fff;
+    padding: 12px 16px;
+  }
+</style>
+</head>
+<body>
+  <div class="layout">
+    <header class="header">ヘッダー</header>
+    <aside class="sidebar">サイドバー（200px固定）</aside>
+    <main class="main">メイン領域（可変）</main>
+    <footer class="footer">フッター</footer>
+  </div>
+</body>
+</html>

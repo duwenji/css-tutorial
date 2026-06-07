@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { font-family: sans-serif; }
+  .block { display: block; background: #e0f0ff; margin: 8px 0; padding: 12px; }
+  .inline { display: inline; background: #ffe0e0; padding: 4px; }
+  .inline-block { display: inline-block; width: 120px; height: 60px;
+                  background: #e0ffe0; margin: 4px; }
+  .flex-container {
+    display: flex;
+    gap: 8px;
+    background: #f0f0f0;
+    padding: 8px;
+    flex-direction: row;
+  }
+  .flex-item {
+    flex: 1;
+    background: #c0c0ff;
+    padding: 12px;
+  }
+</style>
+</head>
+<body>
+  <div class="block">block要素: 幅いっぱい</div>
+  <span class="inline">inline A</span>
+  <span class="inline">inline B</span>
+  <span class="inline">inline C（横に並ぶ）</span>
+  <br><br>
+  <div class="inline-block">inline-block 1</div>
+  <div class="inline-block">inline-block 2</div>
+  <br><br>
+  <div class="flex-container">
+    <div class="flex-item">Flex 1</div>
+    <div class="flex-item">Flex 2</div>
+    <div class="flex-item">Flex 3</div>
+  </div>
+</body>
+</html>

@@ -53,6 +53,13 @@
 
 ### grid-template-areas
 
+`grid-template-areas` は、グリッドのセルに**名前をつけて視覚的にレイアウトを定義する**プロパティです。
+文字列でエリアを記述するため、コードを見ただけでレイアウト構造が直感的に理解できます。
+
+- 文字列（`"..."`）の行数 = グリッドの**行数**
+- 文字列内の名前の数 = グリッドの**列数**
+- 各子要素は `grid-area` プロパティで名前を指定して紐付ける
+
 ```css
 .layout {
   display: grid;
@@ -68,6 +75,38 @@
 .main    { grid-area: main; }
 .footer  { grid-area: footer; }
 ```
+
+#### 重要なルール
+
+| ルール | 説明 |
+|--------|------|
+| **長方形の領域のみ** | L字型など不規則な形状は不可。領域は必ず長方形であること |
+| **同じ名前は連続したセルのみ** | 離れたセルに同じ名前は付けられない |
+| **`.` で空セル** | 領域を割り当てないセルは `"."` （ピリオド）で表現する |
+
+```css
+/* 空セルを含むレイアウト例 */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "nav    .      aside"
+    "main   main   aside"
+    "footer footer footer";
+}
+.header { grid-area: header; }
+.nav    { grid-area: nav; }
+.main   { grid-area: main; }
+.aside  { grid-area: aside; }
+.footer { grid-area: footer; }
+```
+
+#### 主なメリット
+
+- **HTMLの順序と表示位置を独立して制御できる**：HTMLの記述順を変えずに、`grid-template-areas` の文字列を並び替えるだけでレイアウト変更が可能
+- **レスポンシブ対応が容易**：メディアクエリ内で `grid-template-areas` だけを書き換えれば、画面サイズに応じたレイアウトを簡単に実現できる
+- **可読性と保守性が高い**：レイアウト構造が文字列で一目でわかるため、チーム開発や長期メンテナンスに適している
 
 ## 実ソースコード
 
