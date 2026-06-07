@@ -1,0 +1,31 @@
+{
+  "sourceRoot": "./docs",
+  "outputDir": "./ebook-output",
+  "projectName": "css-tutorial",
+  "formats": [
+    "epub",
+    "pdf",
+    "kdp-markdown"
+  ],
+  "metadataFile": "./.github/skills-config/ebook-build/css-tutorial.metadata.yaml",
+  "kdpMetadataFile": "./.github/skills-config/ebook-build/css-tutorial.kdp.yaml",
+  "chapterDirPattern": "^\\d{2}-",
+  "chapterFilePattern": "^(?!00-README\\.md$).+\\.md$",
+  "headingNumbering": true,
+  "tocDepth": 2,
+  "coverFile": "00-COVER.md",
+  "coverTemplateMode": "auto",
+  "coverTemplate": "classic",
+  "collectAssets": true,
+  "normalizeManuscript": true,
+  "requireManuscriptApproval": false,
+  "approvalTokenFile": "./ebook-output/css-tutorial.manuscript.approved",
+  "generateManuscriptReviewReport": false,
+  "manuscriptReviewReviewer": "automated-baseline",
+  "manuscriptReviewDecision": "Approve",
+  "mermaidMode": "off",
+  "mermaidFormat": "png",
+  "failOnMermaidError": false,
+  "mermaidConfigFile": "./.github/skills-config/ebook-build/mermaid.epub.config.json",
+  "mermaidPuppeteerConfigFile": "./.github/skills-config/ebook-build/mermaid.puppeteer.config.json"
+}

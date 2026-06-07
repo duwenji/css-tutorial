@@ -1,0 +1,30 @@
+title: CSS レイアウト実践チュートリアル
+subtitle: Flexbox・Grid・設計原則で学ぶ実戦的CSSレイアウト
+creator: 杜 文吉
+language: ja-JP
+rights: Copyright (c) 杜 文吉
+date: 2026-06-07
+toc: true
+toc-depth: 2
+publisher: Duwenji Lab
+identifier: css-tutorial
+description: >
+  CSS基礎文法からFlexbox、CSS Grid、レイアウト設計原則までを段階的に学べる実践チュートリアル。
+  ダッシュボード・チャットUI・管理画面など、実際のアプリケーション開発で役立つ画面レイアウト構築力を養います。
+keywords:
+  - css
+  - flexbox
+  - css grid
+  - layout
+  - web development
+  - frontend
+subject:
+  - web development
+  - frontend
+chapters:
+  dir-titles:
+    01-css-basics: CSS基礎
+    02-flexbox: Flexbox
+    03-grid: CSS Grid
+    04-layout-patterns: レイアウトパターン
+    05-real-world-examples: 実践演習

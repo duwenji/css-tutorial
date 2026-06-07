@@ -11,3 +11,6 @@ Thumbs.db
 *.epub
 *.mobi
 node_modules/
+
+# Ebook output
+ebook-output/
