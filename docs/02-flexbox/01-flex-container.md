@@ -113,7 +113,7 @@ flex-direction: row の場合
 
 **画面イメージ:**
 
-![フレックスコンテナプロパティ - 画面イメージ](../images/02-01-flex-container.png)
+![フレックスコンテナプロパティ - 画面イメージ](examples/02-01-flex-container.png)
 
 ## レイアウト設計原則との関連
 
@@ -143,8 +143,3 @@ flex-direction: row の場合
 - [ ] 主軸と交差軸の方向を flex-direction との関係で説明できる
 - [ ] justify-content と align-items の違いを説明できる
 - [ ] gap プロパティの効果を説明できる
-
----
-
-**前へ:** [00-README.md](00-README.md)  
-**次へ:** [02-flex-items.md](02-flex-items.md)

@@ -104,7 +104,7 @@ div.panel { color: green; }
 
 **画面イメージ:**
 
-![セレクタと詳細度 - 画面イメージ](../images/01-01-selectors-and-specificity.png)
+![セレクタと詳細度 - 画面イメージ](examples/01-01-selectors-and-specificity.png)
 
 ## レイアウト設計原則との関連
 
@@ -133,8 +133,3 @@ div.panel { color: green; }
 - [ ] クラスセレクタとIDセレクタの詳細度の大小が説明できる
 - [ ] 詳細度が等しい場合、どちらのスタイルが適用されるか説明できる
 - [ ] なぜIDセレクタよりクラスセレクタが推奨されるか説明できる
-
----
-
-**前へ:** [00-README.md](00-README.md)  
-**次へ:** [02-box-model.md](02-box-model.md)

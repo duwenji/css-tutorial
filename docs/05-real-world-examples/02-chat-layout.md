@@ -225,7 +225,7 @@
 
 **画面イメージ:**
 
-![チャットUIレイアウト - 画面イメージ](../images/05-02-chat-layout.png)
+![チャットUIレイアウト - 画面イメージ](examples/05-02-chat-layout.png)
 
 ## レイアウト設計原則 適用ポイント
 
@@ -271,8 +271,3 @@ html/body/#root        → height: 100%
 - [ ] チャットUIのスクロール境界を適切に設計できる
 - [ ] flex: 1 + min-height: 0 の組み合わせを説明できる
 - [ ] AIスタジオV2の問題がなぜ発生し、どう修正されたか説明できる
-
----
-
-**前へ:** [01-dashboard-layout.md](01-dashboard-layout.md)  
-**次へ:** [03-admin-panel.md](03-admin-panel.md)

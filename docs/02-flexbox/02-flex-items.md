@@ -143,7 +143,7 @@ header {
 
 **画面イメージ:**
 
-![フレックスアイテムプロパティ - 画面イメージ](../images/02-02-flex-items.png)
+![フレックスアイテムプロパティ - 画面イメージ](examples/02-02-flex-items.png)
 
 ## レイアウト設計原則との関連
 
@@ -183,8 +183,3 @@ header {
 - [ ] flex-grow / flex-shrink / flex-basis の役割を説明できる
 - [ ] なぜ flex子要素に min-height: 0 が必要か説明できる
 - [ ] flex-shrink: 0 を設定するケースを説明できる
-
----
-
-**前へ:** [01-flex-container.md](01-flex-container.md)  
-**次へ:** [03-flexbox-exercises.md](03-flexbox-exercises.md)

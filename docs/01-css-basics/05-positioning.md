@@ -76,7 +76,7 @@
 
 **画面イメージ:**
 
-![position指定 - 画面イメージ](../images/01-05-positioning.png)
+![position指定 - 画面イメージ](examples/01-05-positioning.png)
 
 ## レイアウト設計原則との関連
 
@@ -108,8 +108,3 @@
 - [ ] positionの5つの値の特徴を説明できる
 - [ ] absoluteの配置基準となる要素がどれか説明できる
 - [ ] z-indexが効くための条件を説明できる
-
----
-
-**前へ:** [04-display-property.md](04-display-property.md)  
-**次へ:** [../02-flexbox/00-README.md](../02-flexbox/00-README.md)

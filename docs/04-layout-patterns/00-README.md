@@ -43,8 +43,3 @@
 | 02 | [スクロール戦略](02-scroll-strategy.md) | overflowの適切な配置とスクロール境界 |
 | 03 | [レスポンシブ対応](03-responsive-layout.md) | メディアクエリと可変レイアウト |
 | 04 | [コンポーネントチェックリスト](04-component-checklist.md) | 新規追加時の7項目確認手順 |
-
----
-
-**前へ:** [../03-grid/03-grid-exercises.md](../03-grid/03-grid-exercises.md)  
-**次へ:** [01-height-propagation.md](01-height-propagation.md)

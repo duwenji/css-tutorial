@@ -124,7 +124,7 @@ block-beta
 
 **画面イメージ:**
 
-![グリッドアイテムプロパティ - 画面イメージ](../images/03-02-grid-items.png)
+![グリッドアイテムプロパティ - 画面イメージ](examples/03-02-grid-items.png)
 
 ## レイアウト設計原則との関連
 
@@ -166,8 +166,3 @@ section {
 - [ ] grid-column / grid-row でセル結合ができる
 - [ ] ライン番号とspanの使い分けを説明できる
 - [ ] Grid内のflexで min-height: 0 がなぜ必要か説明できる
-
----
-
-**前へ:** [01-grid-container.md](01-grid-container.md)  
-**次へ:** [03-grid-exercises.md](03-grid-exercises.md)

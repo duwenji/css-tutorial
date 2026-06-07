@@ -52,7 +52,7 @@
 
 **画面イメージ:**
 
-![Grid演習1 - 画面イメージ](../images/03-03-01-dashboard-grid.png)
+![Grid演習1 - 画面イメージ](examples/03-03-01-dashboard-grid.png)
 
 ## 演習2: レスポンシブカードグリッド
 
@@ -100,7 +100,7 @@
 
 **画面イメージ:**
 
-![Grid演習2 - 画面イメージ](../images/03-03-02-responsive-card-grid.png)
+![Grid演習2 - 画面イメージ](examples/03-03-02-responsive-card-grid.png)
 
 ## 演習3: Grid + Flex 複合レイアウト
 
@@ -173,7 +173,7 @@ Gridで全体の枠組みを作り、各エリア内はFlexboxで配置してく
 
 **画面イメージ:**
 
-![Grid演習3 - 画面イメージ](../images/03-03-03-grid-flex-combined.png)
+![Grid演習3 - 画面イメージ](examples/03-03-03-grid-flex-combined.png)
 
 ## 理解度チェック
 
@@ -181,8 +181,3 @@ Gridで全体の枠組みを作り、各エリア内はFlexboxで配置してく
 - [ ] auto-fill + minmax でレスポンシブグリッドが作れる
 - [ ] GridとFlexboxを組み合わせたレイアウトが組める
 - [ ] Grid内でも overflow と min-height: 0 を適切に設定できる
-
----
-
-**前へ:** [02-grid-items.md](02-grid-items.md)  
-**次へ:** [../04-layout-patterns/00-README.md](../04-layout-patterns/00-README.md)

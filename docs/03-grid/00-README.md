@@ -31,8 +31,3 @@ GridはFlexboxと補完関係にあり、両方を使いこなすことで柔軟
 | 制御方向 | 主軸方向 | 両方向同時 |
 | 用途 | コンポーネント内部の配置 | ページ全体の大枠レイアウト |
 | 折り返し | flex-wrap | grid-templateで定義 |
-
----
-
-**前へ:** [../02-flexbox/03-flexbox-exercises.md](../02-flexbox/03-flexbox-exercises.md)  
-**次へ:** [01-grid-container.md](01-grid-container.md)

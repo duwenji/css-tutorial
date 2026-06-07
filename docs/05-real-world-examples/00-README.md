@@ -25,8 +25,3 @@
 2. **高さ伝播は flex: 1 + min-height: 0**
 3. **overflow は末端のみ**
 4. **7項目チェックリストで検証**
-
----
-
-**前へ:** [../04-layout-patterns/04-component-checklist.md](../04-layout-patterns/04-component-checklist.md)  
-**次へ:** [01-dashboard-layout.md](01-dashboard-layout.md)

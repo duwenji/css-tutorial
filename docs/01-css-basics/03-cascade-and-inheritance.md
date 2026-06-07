@@ -82,7 +82,7 @@ CSSの「C」はCascade（カスケード）の略です。
 
 **画面イメージ:**
 
-![カスケードと継承 - 画面イメージ](../images/01-03-cascade-and-inheritance.png)
+![カスケードと継承 - 画面イメージ](examples/01-03-cascade-and-inheritance.png)
 
 ## レイアウト設計原則との関連
 
@@ -116,8 +116,3 @@ CSSの「C」はCascade（カスケード）の略です。
 - [ ] カスケードの3段階の優先順位（出所 → 詳細度 → 出現順）が説明できる
 - [ ] colorが継承され、borderが継承されない理由を説明できる
 - [ ] inherit / initial / unset / revert の使い分けが説明できる
-
----
-
-**前へ:** [02-box-model.md](02-box-model.md)  
-**次へ:** [04-display-property.md](04-display-property.md)

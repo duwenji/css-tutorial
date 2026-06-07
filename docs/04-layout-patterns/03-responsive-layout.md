@@ -129,7 +129,7 @@
 
 **画面イメージ:**
 
-![レスポンシブ対応 - 画面イメージ](../images/04-03-responsive-layout.png)
+![レスポンシブ対応 - 画面イメージ](examples/04-03-responsive-layout.png)
 
 ## レイアウト設計原則との統合
 
@@ -187,8 +187,3 @@ html, body, #root { height: 100%; }
 - [ ] メディアクエリでブレークポイントを設定できる
 - [ ] レスポンシブ時もレイアウト設計原則を守れる
 - [ ] 600px/768px/900px/1080px の各高さで動作確認できる
-
----
-
-**前へ:** [02-scroll-strategy.md](02-scroll-strategy.md)  
-**次へ:** [04-component-checklist.md](04-component-checklist.md)

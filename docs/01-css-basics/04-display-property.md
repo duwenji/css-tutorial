@@ -92,7 +92,7 @@ flexコンテナの子要素は、`flex-direction` で定義された
 
 **画面イメージ:**
 
-![displayプロパティ - 画面イメージ](../images/01-04-display-property.png)
+![displayプロパティ - 画面イメージ](examples/01-04-display-property.png)
 
 ## レイアウト設計原則との関連
 
@@ -126,8 +126,3 @@ flexコンテナの子要素は、`flex-direction` で定義された
 - [ ] block / inline / inline-block の違いを説明できる
 - [ ] display: flex が子要素に与える影響を説明できる
 - [ ] display: none を使うとレイアウト上の領域がどうなるか説明できる
-
----
-
-**前へ:** [03-cascade-and-inheritance.md](03-cascade-and-inheritance.md)  
-**次へ:** [05-positioning.md](05-positioning.md)

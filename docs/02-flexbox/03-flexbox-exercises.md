@@ -96,7 +96,7 @@
 
 **画面イメージ:**
 
-![Flexbox演習1 - 画面イメージ](../images/02-03-01-header-2column-footer.png)
+![Flexbox演習1 - 画面イメージ](examples/02-03-01-header-2column-footer.png)
 
 ## 演習2: カードリスト（横並び・折り返し）
 
@@ -144,7 +144,7 @@
 
 **画面イメージ:**
 
-![Flexbox演習2 - 画面イメージ](../images/02-03-02-card-list.png)
+![Flexbox演習2 - 画面イメージ](examples/02-03-02-card-list.png)
 
 ## 演習3: 中央配置（縦横中央）
 
@@ -185,7 +185,7 @@
 
 **画面イメージ:**
 
-![Flexbox演習3 - 画面イメージ](../images/02-03-03-center-layout.png)
+![Flexbox演習3 - 画面イメージ](examples/02-03-03-center-layout.png)
 
 ## 理解度チェック
 
@@ -193,8 +193,3 @@
 - [ ] `flex: 1` と `min-height: 0` を適切に使える
 - [ ] `flex-shrink: 0` で固定要素を保護できる
 - [ ] ブラウザで実際に表示して崩れがないか確認した
-
----
-
-**前へ:** [02-flex-items.md](02-flex-items.md)  
-**次へ:** [../03-grid/00-README.md](../03-grid/00-README.md)

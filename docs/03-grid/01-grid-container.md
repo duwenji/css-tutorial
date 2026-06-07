@@ -172,7 +172,7 @@
 
 **画面イメージ:**
 
-![グリッドコンテナプロパティ - 画面イメージ](../images/03-01-grid-container.png)
+![グリッドコンテナプロパティ - 画面イメージ](examples/03-01-grid-container.png)
 
 ## レイアウト設計原則との関連
 
@@ -202,8 +202,3 @@ Gridは**flexの代替ではなく補完**です。
 - [ ] fr単位の意味と計算方法を説明できる
 - [ ] repeat() と minmax() の使い方を説明できる
 - [ ] grid-template-areas でエリア配置ができる
-
----
-
-**前へ:** [00-README.md](00-README.md)  
-**次へ:** [02-grid-items.md](02-grid-items.md)

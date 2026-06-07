@@ -25,8 +25,3 @@
 
 01 → 05 の順に進めることを推奨します。
 各教材の「理解度チェック」で習得状況を確認してください。
-
----
-
-**前へ:** [00-COVER.md](../00-COVER.md)  
-**次へ:** [01-selectors-and-specificity.md](01-selectors-and-specificity.md)

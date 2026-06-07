@@ -106,7 +106,7 @@ CSSのすべての要素は矩形のボックスとして扱われます。
 
 **画面イメージ:**
 
-![ボックスモデル - 画面イメージ](../images/01-02-box-model.png)
+![ボックスモデル - 画面イメージ](examples/01-02-box-model.png)
 
 ## レイアウト設計原則との関連
 
@@ -125,8 +125,3 @@ CSSのすべての要素は矩形のボックスとして扱われます。
 - [ ] margin / border / padding / content の内側から外側への順序が言える
 - [ ] content-box と border-box の違いを説明できる
 - [ ] marginの相殺が発生する条件を説明できる
-
----
-
-**前へ:** [01-selectors-and-specificity.md](01-selectors-and-specificity.md)  
-**次へ:** [03-cascade-and-inheritance.md](03-cascade-and-inheritance.md)

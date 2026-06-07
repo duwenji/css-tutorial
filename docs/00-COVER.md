@@ -51,7 +51,4 @@ STEP 5 ──→ Real World Examples（3教材）
 
 ---
 
-**次のステップ:** [01-css-basics/00-README.md](01-css-basics/00-README.md) からCSS基礎を学びましょう。
-
-
 

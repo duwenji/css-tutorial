@@ -22,8 +22,3 @@ Flexboxはレイアウト設計原則の核心技術です。
 
 01 → 02 → 03 の順に進めてください。
 特に `min-height: 0` の重要性はレイアウト設計原則に直結する重要ポイントです。
-
----
-
-**前へ:** [../01-css-basics/05-positioning.md](../01-css-basics/05-positioning.md)  
-**次へ:** [01-flex-container.md](01-flex-container.md)

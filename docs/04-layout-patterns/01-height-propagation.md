@@ -188,7 +188,7 @@ html, body, #root {
 
 **画面イメージ:**
 
-![高さ伝播レイヤー設計 - 画面イメージ](../images/04-01-height-propagation.png)
+![高さ伝播レイヤー設計 - 画面イメージ](examples/04-01-height-propagation.png)
 
 ## アンチパターンと修正
 
@@ -214,8 +214,3 @@ html, body, #root {
 - [ ] flex + min-height: 0 の組み合わせが必要な理由を説明できる
 - [ ] レイヤー構成図を自分で描ける
 - [ ] 10件/30件/50件のデータ量で崩れないレイアウトを組める
-
----
-
-**前へ:** [00-README.md](00-README.md)  
-**次へ:** [02-scroll-strategy.md](02-scroll-strategy.md)

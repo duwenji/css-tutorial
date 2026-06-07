@@ -170,7 +170,7 @@ html, body, #root {
 
 **画面イメージ:**
 
-![スクロール戦略 - 画面イメージ](../images/04-02-scroll-strategy.png)
+![スクロール戦略 - 画面イメージ](examples/04-02-scroll-strategy.png)
 
 ## アンチパターン
 
@@ -201,8 +201,3 @@ html, body, #root {
 - [ ] overflow: hidden の正しい使いどころを説明できる
 - [ ] 複数パネルが独立してスクロールするレイアウトを組める
 - [ ] 上位層にoverflow:hiddenを設定した場合の弊害を説明できる
-
----
-
-**前へ:** [01-height-propagation.md](01-height-propagation.md)  
-**次へ:** [03-responsive-layout.md](03-responsive-layout.md)

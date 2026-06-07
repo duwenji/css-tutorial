@@ -198,8 +198,3 @@ html, body, #root {
 - [ ] 各項目の具体的な確認方法を説明できる
 - [ ] アンチパターンを見つけて修正できる
 - [ ] 自分のコードをチェックリストで自己レビューできる
-
----
-
-**前へ:** [03-responsive-layout.md](03-responsive-layout.md)  
-**次へ:** [../05-real-world-examples/00-README.md](../05-real-world-examples/00-README.md)

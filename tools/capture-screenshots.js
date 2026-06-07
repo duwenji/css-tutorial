@@ -3,17 +3,16 @@
  *
  * 使い方: node tools/capture-screenshots.js
  *
- * docs/htmls/ 内の全 .html ファイルをブラウザで開き、
+ * docs/<chapter>/examples/ 内の全 .html ファイルをブラウザで開き、
  * 1200x900 のビューポートでスクリーンショットを撮影し、
- * docs/images/ に同名の .png として保存します。
+ * 同じディレクトリに同名の .png として保存します。
  */
 
 const puppeteer = require('puppeteer');
 const path = require('path');
 const fs = require('fs');
 
-const HTMLS_DIR = path.resolve(__dirname, '../docs/htmls');
-const IMAGES_DIR = path.resolve(__dirname, '../docs/images');
+const DOCS_DIR = path.resolve(__dirname, '../docs');
 const VIEWPORT_WIDTH = 1200;
 const VIEWPORT_HEIGHT = 900;
 
@@ -21,19 +20,36 @@ async function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function captureAll() {
-  // 出力ディレクトリがなければ作成
-  if (!fs.existsSync(IMAGES_DIR)) {
-    fs.mkdirSync(IMAGES_DIR, { recursive: true });
+function collectHtmlFiles(dir) {
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  let results = [];
+
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+
+    if (entry.isDirectory()) {
+      results = results.concat(collectHtmlFiles(fullPath));
+      continue;
+    }
+
+    if (entry.isFile() && entry.name.endsWith('.html')) {
+      // chapter/examples 配下のHTMLのみを対象にする
+      const normalized = fullPath.replace(/\\/g, '/');
+      if (normalized.includes('/docs/') && normalized.includes('/examples/')) {
+        results.push(fullPath);
+      }
+    }
   }
 
+  return results;
+}
+
+async function captureAll() {
   // HTMLファイル一覧を取得
-  const files = fs.readdirSync(HTMLS_DIR)
-    .filter(f => f.endsWith('.html'))
-    .sort();
+  const files = collectHtmlFiles(DOCS_DIR).sort();
 
   if (files.length === 0) {
-    console.log('HTMLファイルが見つかりません: ' + HTMLS_DIR);
+    console.log('examples 配下にHTMLファイルが見つかりません: ' + DOCS_DIR);
     process.exit(1);
   }
 
@@ -47,12 +63,12 @@ async function captureAll() {
   let success = 0;
   let failed = 0;
 
-  for (const file of files) {
-    const htmlPath = path.join(HTMLS_DIR, file);
-    const baseName = path.basename(file, '.html');
-    const pngPath = path.join(IMAGES_DIR, baseName + '.png');
+  for (const htmlPath of files) {
+    const baseName = path.basename(htmlPath, '.html');
+    const pngPath = path.join(path.dirname(htmlPath), baseName + '.png');
+    const displayPath = path.relative(DOCS_DIR, htmlPath).replace(/\\/g, '/');
 
-    console.log(`[${success + failed + 1}/${files.length}] ${file} ...`);
+    console.log(`[${success + failed + 1}/${files.length}] ${displayPath} ...`);
 
     try {
       const page = await browser.newPage();
