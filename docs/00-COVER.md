@@ -1,0 +1,56 @@
+# CSS レイアウト実践チュートリアル - 全体像
+
+## このチュートリアルで身につくこと
+
+- CSSの基礎文法（セレクタ、ボックスモデル、カスケード、display、position）
+- Flexboxによる柔軟なレイアウト設計
+- CSS Gridによる2次元レイアウト設計
+- **CSS Layout Design Guidelines** の全原則の理解と活用法
+- 実践的な画面レイアウト（ダッシュボード、チャットUI、管理画面）の構築力
+
+## 対象読者
+
+- HTMLの基本を理解している方
+- CSSをこれから体系的に学びたい方
+- 実際のアプリケーション開発で安定したレイアウトを組みたい方
+
+## 学習の流れ
+
+```
+STEP 1 ──→ CSS Basics（5教材）
+             セレクタ・ボックスモデル・カスケード・display・position
+
+STEP 2 ──→ Flexbox（3教材）
+             コンテナ/アイテムプロパティ・演習
+
+STEP 3 ──→ CSS Grid（3教材）
+             コンテナ/アイテムプロパティ・演習
+
+STEP 4 ──→ Layout Patterns（4教材）
+             高さ伝播・スクロール戦略・レスポンシブ・チェックリスト
+             ※ CSS Layout Design Guidelines の実践的理解
+
+STEP 5 ──→ Real World Examples（3教材）
+             ダッシュボード・チャットUI・管理画面の構築演習
+```
+
+## 前提知識
+
+| 知識 | 要否 |
+|------|------|
+| HTML基本構造（要素・属性） | ✅ 必須 |
+| テキストエディタ操作 | ✅ 必須 |
+| ブラウザ開発者ツール基本操作 | 🔶 推奨 |
+| JavaScript | ❌ 不要 |
+
+## 本チュートリアルの特徴
+
+1. 「良い例」と「悪い例」の対比で理解が深まる
+2. 全コードがコピペ可能で即座に動作確認できる
+3. 実際のアプリケーション開発で得られた知見（CSS Layout Design Guidelines）を反映
+
+---
+
+**次のステップ:** [01-css-basics/00-README.md](01-css-basics/00-README.md) からCSS基礎を学びましょう。
+
+**参考:** [css-layout-guidelines.md](../css-layout-guidelines.md)
